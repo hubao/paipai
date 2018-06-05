@@ -5,8 +5,11 @@
 #ifndef ACCOUNT_BUSINESSHANDLER_H
 #define ACCOUNT_BUSINESSHANDLER_H
 
-#include "rpc/RpcService.h"
-#include "include/ProtoService_types.h"
+
+#include "ProtoService_types.h"
+#include "ProtoRpcService.h"
+
+#include "IRpcService.h"
 
 class CBusinessHandler : public IRpcEvent{
 public:

@@ -41,10 +41,9 @@ LIBPATH		= -L$(TOP_DIR)/import/lib -L/usr/local/lib
 
 #include path
 INCLUDEPATH	+= -I$(TOP_DIR)/import/include
-INCLUDEPATH	+= -I$(TOP_DIR)/import/include/common
 INCLUDEPATH	+= -I$(TOP_DIR)/import/include/rpc
-INCLUDEPATH	+= -I$(TOP_DIR)/import/include/export/thrift
-INCLUDEPATH	+= -I$(TOP_DIR)/import/include/export/thrift/include
+INCLUDEPATH	+= -I$(TOP_DIR)/import/export
+INCLUDEPATH	+= -I$(TOP_DIR)/plate/include
 INCLUDEPATH += -I/usr/local/include/thrift/
 INCLUDEPATH	+= -I../Src
 

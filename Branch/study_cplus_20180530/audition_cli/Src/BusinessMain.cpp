@@ -2,9 +2,8 @@
 // Created by hubao on 2018/5/30.
 //
 
-#include "rpc/RpcService.h"
+
 #include "thrift_cli/Src/client.h"
-#include "ProtoService_types.h"
 #include "BusinessHandler.h"
 #include <iostream>
 
