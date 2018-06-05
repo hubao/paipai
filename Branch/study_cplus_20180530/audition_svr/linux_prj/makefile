@@ -2,7 +2,7 @@
 #编译版本debug,release,release_log
 COMP_VER	= release_log
 
-PROJECT	    = audition
+PROJECT	    = audition_svr
 
 #版本号，以后发布时候修改
 include     ./versionno.h

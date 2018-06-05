@@ -11,5 +11,13 @@ void CBusinessHandler::callOnewayMsgDealerFunc(const proto_rpc::ProtoRequest &ao
 
 void CBusinessHandler::callTwowayMsgDealerFunc(const proto_rpc::ProtoRequest &aoRequest,
                                                proto_rpc::ProtoReply &aoResponse) {
+
     std::cout << __FUNCTION__ << std::endl;
+
+    std::cout << " type=" << aoRequest.type
+         << " sharding_id=" << aoRequest.sharding_id
+         << " content=" << aoRequest.content
+         << std::endl;
+    sleep(10000);
+
 }
