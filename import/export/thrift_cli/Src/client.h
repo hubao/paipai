@@ -9,8 +9,6 @@
 #ifndef client_h
 #define client_h
 
-#include "rpc/RpcClient.h"
-
 
 #include "concurrency/ThreadManager.h"
 #include "concurrency/PosixThreadFactory.h"
@@ -22,7 +20,8 @@
 
 #include "ProtoRpcService.h"
 #include "RpcTypes.h"
-#include "basefun.h"
+
+#include "IRpcClient.h"
 
 using namespace apache::thrift;
 using namespace apache::thrift::protocol;
@@ -34,6 +33,7 @@ using namespace proto_rpc;
 
 class IClient : public IRpcClient
 {
+
 public:
     IClient() : miConnMs(2000),miRecvMs(2000),miSendMs(2000),_client(NULL){}
     

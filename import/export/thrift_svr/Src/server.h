@@ -20,8 +20,8 @@
 #include <concurrency/ThreadManager.h>
 #include <concurrency/PosixThreadFactory.h>
 
-#include "rpc/ProtoRpcService.h"
-#include "rpc/RpcTypes.h"
+#include "ProtoRpcService.h"
+#include "RpcTypes.h"
 
 #include "IRpcService.h"
 

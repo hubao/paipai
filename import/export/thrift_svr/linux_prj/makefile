@@ -13,7 +13,7 @@ PROJECT     = libthrift_svr
 include     ./version.h
 VERSION     = $(DEFVERSION)
 
-TOP_DIR     = ../../../../..
+TOP_DIR     = ../../../..
 
 
 #release
@@ -37,11 +37,10 @@ LIBPATH     =
 
 #include path
 INCLUDEPATH += -I../Src
-INCLUDEPATH += -I../../include
 INCLUDEPATH += -I/usr/local/include/thrift
-INCLUDEPATH += -I$(TOP_DIR)/include
-INCLUDEPATH += -I$(TOP_DIR)/include/common
-INCLUDEPATH += -I$(TOP_DIR)/include/rpc
+INCLUDEPATH += -I$(TOP_DIR)/import/include
+INCLUDEPATH += -I$(TOP_DIR)/import/include/rpc
+INCLUDEPATH += -I$(TOP_DIR)/plate/include
 
 LD          = ar
 LDFLAGS     = rcs
